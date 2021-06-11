@@ -3,6 +3,7 @@
 ## Clone darknet repository
 ```
 $ git clone https://github.com/AlexeyAB/darknet
+$ cd darknet/
 ```
 
 ## Make darknet
