@@ -1,4 +1,4 @@
-# How to use darknet so library ?
+# How to use darknet library ?
 
 ## Clone darknet repository
 ```
@@ -30,3 +30,26 @@ $ cp libdarknet.pc /usr/local/lib/pkgconfig
 ```
 $ ldconfig
 ```
+
+## Test library
+```
+// test_darknet_library.c
+#include <stdio.h>
+#include <darknet.h>
+
+int
+main()
+{
+	cuda_set_device(0);
+	
+	printf("Test libdarknet \n");
+	
+	return 0;
+}
+```
+
+```
+$ gcc -Wall test_darknet_library.c -ldarknet -o test_darknet_library.out
+$ ./test_darknet_library.out
+```
+
