@@ -123,3 +123,7 @@
 	$ make
 	$ ./sradio.out
 	```
+- Push repo
+	```
+	$ git push
+	```
