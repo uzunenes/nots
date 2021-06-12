@@ -1,11 +1,11 @@
 # Project template creation guidelines
 
 
-- Create a new repository on github.
-	- Choose only a license (MIT) file.
+- Create a new .git repository on github, gitlab vs.
+	- Add only a license (MIT) file.
 
 
-- Clone git repository on local machine
+- Clone .git repository on local machine
 	```
 	$ git clone https://github.com/uzunenes/sradio
 	$ cd sradio/
@@ -20,7 +20,7 @@
 	```
 
 
-- add Readme file
+- Add Readme file
 	```
 	$ touch Readme.md
 	$ git add Readme.md
@@ -28,7 +28,7 @@
 	```
 
 
-- add .gitignore file
+- Add .gitignore file
 	```
 	$ echo "*.o" >> .gitignore
 	$ echo "*.out" >> .gitignore
@@ -39,13 +39,13 @@
 	$ git commit -m "created and added"
 	```
 
-- add source && include folders
+- Add source and include folders
 	```
-	$ mkdir src include
+	$ mkdir src/ include/
 	$ git add src/ include/
 	$ git commit -m "created and added"
 	```
-	- create include/Version.h file
+	- Create "include/Version.h" file
 		```
 		#ifndef VERSION_H
 		#define VERSION_H
@@ -55,7 +55,7 @@
 		#endif // VERSION_H
 		```
 
-	- create src/main.c file
+	- Create "src/main.c" file
 		```
 		#include <stdio.h>
 		#include "../include/Version.h"
@@ -69,14 +69,14 @@
 		}
 		```
 
-		- add .git
+	- Add .git
 		```
 		$ git add src/main.c include/Version.h
 		$ git commit -m "created and added"
 		```
 
 
-- create Makefile file
+- Create Makefile file
 	```
 	PROJECT_NAME = sradio 
 	CC = gcc
@@ -118,7 +118,7 @@
 		$ git commit -m "created and added"
 		```
 
-- test repo
+- Test repo
 	```
 	$ make
 	$ ./sradio.out
