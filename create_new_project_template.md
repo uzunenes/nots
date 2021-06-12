@@ -41,12 +41,43 @@ $ git commit -m "created and added"
 ```
 
 
-## add new folders
+## add source and include folders
 ```
 $ mkdir src include
 $ git add src/ include/
 $ git commit -m "created and added"
 ```
+
+
+- include/Version.h
+```
+#ifndef VERSION_H
+#define VERSION_H
+
+#define Version "0.1"
+
+#endif // VERSION_H
+```
+
+- src/main.c
+```
+#include <stdio.h>
+#include "../include/Version.h"
+
+int
+main(int argc, char** argv)
+{
+        printf("[%s] started, Version: [%s] \n", argv[0], Version);
+
+        return 0;
+}
+```
+
+```
+$ git add src/main.c include/Version.h
+$ git commit -m "created and added"
+```
+
 
 ## add Makefile
 ```
@@ -86,4 +117,10 @@ clean:
 ```
 $ git add Makefile
 $ git commit -m "created and added"
+```
+
+## test repo
+```
+$ make
+$ ./sradio.out
 ```
