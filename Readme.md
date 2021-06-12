@@ -1,4 +1,3 @@
-# notes
+# nots
 Useful notes
 
-Not ready!
