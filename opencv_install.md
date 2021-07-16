@@ -74,6 +74,6 @@ main()
 ```
 
 ```
-$ g++ -Wall test_opencv_library.cpp -lopencv -o test_opencv_library.out
+$ g++ -Wall test_opencv_library.cpp `pkg-config --cflags --libs opencv` -o test_opencv_library.out
 $ ./test_opencv_library.out
 ```
