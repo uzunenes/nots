@@ -67,7 +67,7 @@ $ make install
 int
 main()
 {
-	std::cout << getBuildInformation() << "\n";
+	std::cout << cv::getBuildInformation() << "\n";
 	
 	return 0;
 }
