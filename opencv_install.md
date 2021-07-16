@@ -19,7 +19,7 @@ $ tar -xf 3.4.15.tar.gz.1
 $ mkdir build
 $ cd build/
 ```
->Warning: Install pre-requisite libraries
+>Warning: Install prerequisite libraries
 ```
 $ cmake \
 	-D CMAKE_BUILD_TYPE=RELEASE \
