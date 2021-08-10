@@ -86,7 +86,7 @@
 	OBJCC = $(patsubst src/%.c, obj/%.o, $(wildcard src/*c))
 	OBJCPP = $(patsubst src/%.cpp, obj/%.o, $(wildcard src/*cpp))
 
-	LDFLAGS +=
+	LDFLAGS =
 	CFLAGS +=
 
 
